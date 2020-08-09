@@ -4,10 +4,10 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minumum-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-compatible" content="IE=edge" >
     <head>
-        <title></title>
+        <title>ANIMATION</title>
         <style></style>
         <link crossorigin="anonymus" rel="icon" href="">
-        <link crossorigin="anonymus" rel="stylesheet" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" href="import.css">
+        <link rel="stylesheet" crossorigin="anonymus" href="import.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
         </script>
@@ -24,23 +24,41 @@
     </head>
 
 
-  <body>
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Page Title</title>
-    </head>
+sass 
     <body>
       
-        <section id="example-element" tabindex="0"> <div class="face front">1</div> <div class="face back">2</div> <div class="face right">3</div> <div class="face left">4</div> <div class="face top">5</div> <div class="face bottom">6</div> </section>
-   
+        <div class="buttons">
+            <button class="blob-btn">
+              Blob Button
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
+            <br/>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="goo">
+                
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        
+          <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
+          
+
+
+          <button>
+             TESTE
+          </button>
     </body>
-</html>
-
-
-  </body>
 
 
 
