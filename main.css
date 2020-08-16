@@ -1,0 +1,489 @@
+
+
+:root
+{
+    --verde:rgb(108, 236, 202);
+    --white:white;
+    --black:rgba(5,5,5,1);
+    --transparent:transparent;
+    --cinza:rgb(14, 13, 13);
+
+
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    outline:none;
+    border:none;
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+button
+{
+    user-select:none;
+}
+
+body
+{
+    font-family: sans-serif;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+
+}
+
+input[type=checkbox]
+{
+    display:none
+}
+
+.nv-1 .bt-1
+{
+    background-color: var(--verde);
+    border:solid 1.5px var(--verde);
+}
+
+.nv-1 .bt-1:hover
+{
+    background-color: transparent;
+    color:var(--verde);
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+    -moz-transition:background-color 0.5s;
+    -ms-transition:background-color 0.5s;
+    -o-transition:background-color 0.5s;
+}
+
+.nv-1 .nav-s
+{
+
+    width:10vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nv-1 .nav-s .nav-d
+{
+    padding:10px;
+    background-color:transparent;
+    border:solid 1.5px var(--white);
+    color:var(--white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.ul-1 li
+{
+    list-style: none;
+    display:inline;
+    padding:7px 20px 7px 20px;
+    margin:0px 10px 0px 0px;
+    color:var(--white);
+    text-align: center;
+    transform:translateX(-20px);
+    -webkit-transform:translateX(-20px);
+    -moz-transform:translateX(-20px);
+    -ms-transform:translateX(-20px);
+    -o-transform:translateX(-20px);
+}
+
+.ul-1 .li-0
+{
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    background-color: var(--verde);
+    padding:5px 10px;
+    -o-border-radius:100%;
+}
+.ul-1 .cart
+{
+    color:var(--verde) 
+}
+.nv-1
+{
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    width:100%;
+    height:70px;
+    background:rgba(30, 28, 28, 0.945);
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.ul-1
+{
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+.suport
+{
+    display:none
+}
+
+.lb-1
+{
+    display:none
+}
+
+
+
+
+
+
+
+
+section
+{
+   width:100%;
+   height:100%;
+   
+}
+
+
+section .p-flex
+{
+    width:100%;
+    height:600px;
+    background-color:var(--white);
+    display:flex;
+    align-items:center;
+    font-size: 1.33rem;
+
+}
+
+.p-flex .flex 
+{
+    padding:20px
+}
+
+.p-flex .flex > *:not(a)
+{
+    display:block;
+    margin:13px 0px;
+    color:var(--black)
+}
+
+a
+{
+    color:var(--black);
+}
+
+.p-flex .flex button
+{
+    padding:5px 10px;
+    background-color: var(--verde);
+    color:var(--white);
+    border:solid 1.5px var(--verde);
+}
+
+.p-flex .flex button:hover
+{
+    background-color:var(--transparent);
+    color:var(--verde);
+    transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+    -moz-transition:background-color 0.5s;
+    -ms-transition:background-color 0.5s;
+    -o-transition:background-color 0.5s;
+}
+
+.p-flex .c-img 
+{
+    height:100%;
+    width:100%;
+    background-color: var(--white);
+}
+
+.p-flex .c-img .img 
+{
+    height:100%;
+    width:100%;
+    background:url("https://static.wixstatic.com/media/42dbaa_369da3115f7442a9b049a998d33538cb.png/v1/fill/w_502,h_615,al_c,q_85,usm_0.66_1.00_0.01/42dbaa_369da3115f7442a9b049a998d33538cb.webp") no-repeat center center / 28rem
+}
+
+
+
+.features 
+{
+    width:100%;
+    height:600px;
+    background:url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60") no-repeat fixed;
+    background-size: 100% 100%;
+    background-color: transparent;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+
+.features .funci
+{
+    height:100%;
+    width:40%;
+    padding:20px 0px
+}
+
+.features .funci h2
+{
+    font-size: 3.5rem;
+    margin-bottom:7px
+}
+
+
+.features .funci .set > i
+{
+    color:var(--verde)
+}
+
+.features .funci > p
+{
+    font-weight:200;
+    color:var(--cinza);
+    font-size: 1.1rem;
+}
+
+
+.features .funci > p:last-of-type
+{
+    padding-bottom: 50px;
+}
+
+
+.features .funci .set 
+{
+    display: inline;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+.features .funci .set .fol > p
+{
+    font-size: 1.8rem;
+    color:var(--cinza)
+}
+
+.features .funci .set .fol 
+{
+    padding-left:10px;
+    font-weight: 600;
+
+}
+
+
+section .ton 
+{
+    width:100%;
+    height:900px;
+    background:var(--transparent);
+    display:flex;
+    justify-content: center;
+
+}
+
+section .ton .ton-f
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section .ton .ton-f .wireless
+{
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .ton .ton-f .wireless p
+{
+    font-size:x-large;
+    color:var(--cinza)
+}
+
+section .ton .ton-f .wireless h2
+{
+    margin: 10px 0px 10px 0px;
+    font-size:xx-large;
+}
+
+section .ton .ton-f .wireless i
+{
+    user-select: none;
+    padding:17px;
+    color:var(--verde);
+    border:solid 1.5px var(--verde);
+    border-radius:14px;
+    -webkit-border-radius:14px;
+    -moz-border-radius:14px;
+    -ms-border-radius:14px;
+    -o-border-radius:14px;
+}
+section .curvas
+{
+    background:url("https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60") no-repeat fixed;
+    background-size:100% 100%;
+    width:100%;
+    height:400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes borrar
+{
+    to{
+       
+        text-shadow: 0px 0px 0px var(--white);
+    }
+    from 
+    {
+        text-shadow: 0px 2px 1px var(--white);
+    }
+}
+
+
+section .curvas h2
+{
+  font-size:xx-large;
+  user-select: none;
+  color:var(--white);
+  color:transparent;
+  position: relative;
+  text-shadow: 0px 1px var(--white);
+  animation:00000.1ms borrar alternate infinite ;
+  -webkit-animation:00000.1ms borrar alternate infinite 
+}
+
+
+section .design 
+{
+    display:block;
+    flex-direction: column;
+    padding:30px 0px 0px 30px;
+    width:100%;
+    height:1600px;
+    color:var(--black);
+    background-color: var(--transparent);
+}
+
+section .design h2
+{
+    font-size:2.5rem;
+    font-weight: 10;
+}
+
+
+
+section .design .conectores
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+section .design .conectores .grid 
+{
+    width:100%;
+    height:1000px;
+    background:var(--white)
+
+}
+
+section .design .conectores .grid .grid-f
+{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    height:100%;
+}
+
+section .design .conectores .grid .g
+{
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: 1fr 1fr;
+}
+section .design .conectores .grid .g .grid-f p
+{
+    margin:20px 0px 0px 20px;
+    font-size:1rem;
+    overflow:visible
+}
+
+section .design .conectores .grid .g .grid-f p:nth-of-type(1)
+{
+    transform:translatey(-75px);
+    -webkit-transform:translatey(-75px);
+    -moz-transform:translatey(-75px);
+    -ms-transform:translatey(-75px);
+    -o-transform:translatey(-75px);
+}
+
+section .design .conectores .grid .g .g-img
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+
+section .design .conectores .grid .g .g-img .grid-img
+{
+    height:50%;
+    width: 100%;
+    background:url("https://static.wixstatic.com/media/42dbaa_5a33625cc7c04c7b933fdcb7008322a0.png/v1/fill/w_478,h_550,al_c,q_85,usm_0.66_1.00_0.01/42dbaa_5a33625cc7c04c7b933fdcb7008322a0.webp") no-repeat;
+    background-size:100% 100%;
+    align-self: center;
+    display:flex
+}
+
+
+section .design .conectores .grid .g .grid-f p span
+{
+    width:60px;
+    height:1.5px;
+    background-color:var(--black);
+    display: inline-block;
+    margin:0px 0px 5px 95px;
+    transform:scalex(3.5);
+    -webkit-transform:scalex(3.5);
+    -moz-transform:scalex(3.5);
+    -ms-transform:scalex(3.5);
+}
+
+section .design .conectores .life
+{
+    width:100%;
+    height:600px
+}
+
+ footer
+{
+    width:100%;
+    height:200px; 
+}
+
+
+
+
+

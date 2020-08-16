@@ -1,11 +1,12 @@
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-;
-@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-;
-@import "https://fonts.googleapis.com/icon?family=Material+Icons" 
-;
-@import "main.css"
 
+
+@import "main.css" 
+;
+@import "media.css"
+;
+@import "font.css"
+;
+@import "https://fonts.googleapis.com/icon?family=Material+Icons"
 
 
 
