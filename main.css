@@ -21,9 +21,9 @@
 
 }
 
-button
+*
 {
-    user-select:none;
+    user-select:none !important;
 }
 
 body
@@ -32,7 +32,7 @@ body
     width:100%;
     height:100%;
     overflow-x: hidden;
-
+    position: relative;
 }
 
 input[type=checkbox]
@@ -119,6 +119,9 @@ input[type=checkbox]
     background:rgba(30, 28, 28, 0.945);
     justify-content: flex-end;
     align-items: center;
+    position:fixed;
+    top:0;
+    z-index:3
     
 }
 
@@ -150,6 +153,7 @@ section
 {
    width:100%;
    height:100%;
+   position:relative
    
 }
 
@@ -471,18 +475,159 @@ section .design .conectores .grid .g .grid-f p span
     -ms-transform:scalex(3.5);
 }
 
-section .design .conectores .life
+ .caixas
 {
-    width:100%;
-    height:600px
+    width:100vw;
+    height:100vh;
+    background:rgba(255,255,255,.5);
+    z-index: 40;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    display:none
 }
 
- footer
+.caixas .compra
 {
-    width:100%;
-    height:200px; 
+    width:80%;
+    height:70%;
+    min-height: 270px;
+    min-width:300px;
+    max-width:600px;
+    max-height: 1600px;
+    background-color: var(--black);
+    color:var(--verde);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 
+.compra p
+{
+   text-align: center;
+
+}
+
+.compra p{
+   padding:10px
+}
+
+.compra h2{
+    text-align: center;
+}
+
+
+.cartaz
+{
+    width:100%;
+    height:100%; ;
+    background-color:var(--black);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.green
+{
+    background-color: var(--white);
+    width:40%;
+    height:80%;
+    position: relative;
+    overflow: hidden;
+    color:var(--black);
+    pointer-events:all
+}
+
+
+
+.green svg
+{
+    position:absolute;
+}
+
+.green svg circle
+{
+   fill:var(--verde)
+}
+
+.green .abs
+{
+    position: absolute;
+    width:100% ;
+    height:100%;
+    justify-content: center;
+    text-align:center
+
+}
+
+.green .abs h3
+{
+    padding:15px 0px
+}
+
+.green .abs h1
+{
+    padding:15px 0px
+}
+
+
+
+@keyframes spin 
+{
+    to
+    {
+        transform:rotate(0deg)    ;
+        -webkit-transform:rotate(0deg)    ;
+        -moz-transform:rotate(0deg)    ;
+        -ms-transform:rotate(0deg)    ;
+        -o-transform:rotate(0deg)    ;
+}
+    from
+    {
+        transform:rotate(180deg)    ;
+        -webkit-transform:rotate(180deg)    ;
+        -moz-transform:rotate(180deg)    ;
+        -ms-transform:rotate(180deg)    ;
+        -o-transform:rotate(180deg)    ;
+}
+}
+
+.green .abs i
+{
+    transform:rotate(0deg);
+    animation:2s 0s spin infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-animation:2s 0s spin infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+}
+
+.green .abs .redondo
+{
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    background-color:var(--verde);
+    width:150px;
+    height:150px;
+    font-weight: 900;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+
+.green .abs .redondo:hover
+{
+    transition-duration: 1s;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
 
 
 
