@@ -1,7 +1,1 @@
-<script src="ttps://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+import {JS} from 'import.js'
