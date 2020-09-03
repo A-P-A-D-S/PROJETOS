@@ -1,1 +1,1 @@
-import {JS} from 'import.js'
+import {JS} from 'export.js'
